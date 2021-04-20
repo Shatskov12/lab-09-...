@@ -1,7 +1,7 @@
 // Copyright 2020 Your Name <your_email>
 
-#ifndef TEMPLATE_ROOT_CERTIFICATES_HPP_
-#define TEMPLATE_ROOT_CERTIFICATES_HPP_
+#ifndef INCLUDE_CERTIFICATES_HPP_
+#define INCLUDE_CERTIFICATES_HPP_
 #include <boost/asio/ssl.hpp>
 #include <string>
 
@@ -96,7 +96,7 @@ load_root_certificates(ssl::context& ctx, boost::system::error_code& ec)
       "9pWXTO9JrYMML7d+XRSZA1n3856OqZDX4403+9FnXCvfcLZLLKTBvwwFgEFGpzjK\n"
       "UEVbkhd5qstF6qWK\n"
       "-----END CERTIFICATE-----\n";
-  ;
+
 
   ctx.add_certificate_authority(
       boost::asio::buffer(cert.data(), cert.size()), ec);
@@ -122,4 +122,4 @@ load_root_certificates(ssl::context& ctx)
   if (ec)
     throw boost::system::system_error{ec};
 }
-#endif  // TEMPLATE_ROOT_CERTIFICATES_HPP_
+#endif  // INCLUDE_CERTIFICATES_HPP_

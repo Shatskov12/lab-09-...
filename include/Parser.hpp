@@ -1,7 +1,7 @@
 // Copyright 2020 Your Name <your_email>
 
-#ifndef TEMPLATE_PARSER_HPP_
-#define TEMPLATE_PARSER_HPP_
+#ifndef INCLUDE_PARSER_HPP_
+#define INCLUDE_PARSER_HPP_
 #include <iostream>
 #include <string>
 #include "Downloader.hpp"
@@ -19,4 +19,4 @@ class Parser {
   inline static Queue<std::string> queue_writer;
 };
 
-#endif  // TEMPLATE_PARSER_HPP_
+#endif  // INCLUDE_PARSER_HPP_
