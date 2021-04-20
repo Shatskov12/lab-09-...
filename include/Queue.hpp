@@ -1,9 +1,7 @@
-//
-// Created by юрий on 12/04/2021.
-//
+// Copyright 2020 Your Name <your_email>
 
-#ifndef TEMPLATE_QUEUE_HPP
-#define TEMPLATE_QUEUE_HPP
+#ifndef TEMPLATE_QUEUE_HPP_
+#define TEMPLATE_QUEUE_HPP_
 
 #include <iostream>
 #include <mutex>
@@ -36,9 +34,10 @@ class Queue {
     return _queue.empty();
   }
   int _counter;
+
  private:
   std::mutex _mut;
   std::queue<T> _queue;
 };
 
-#endif  // TEMPLATE_QUEUE_HPP
+#endif  // TEMPLATE_QUEUE_HPP_
