@@ -1,7 +1,7 @@
 // Copyright 2020 Your Name <your_email>
 
-#ifndef THREAD_POOL_H_
-#define THREAD_POOL_H_
+#ifndef INCLUDE_THREADPOOL_HPP_
+#define INCLUDE_THREADPOOL_HPP_
 
 #include <vector>
 #include <queue>
@@ -98,4 +98,4 @@ inline ThreadPool::~ThreadPool()
     worker.join();
 }
 
-#endif  // TEMPLATE_TREADPOOL_H_
+#endif  // INCLUDE_THREADPOOL_HPP_

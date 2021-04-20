@@ -1,7 +1,7 @@
 // Copyright 2020 Your Name <your_email>
 
-#ifndef INCLUDE_CERTIFICATES_HPP_
-#define INCLUDE_CERTIFICATES_HPP_
+#ifndef INCLUDE_CERTIF_HPP_
+#define INCLUDE_CERTIF_HPP_
 #include <boost/asio/ssl.hpp>
 #include <string>
 
@@ -104,7 +104,7 @@ load_root_certificates(ssl::context& ctx, boost::system::error_code& ec)
     return;
 }
 
-}
+}//namespace detail
 
 inline
 void
@@ -122,4 +122,4 @@ load_root_certificates(ssl::context& ctx)
   if (ec)
     throw boost::system::system_error{ec};
 }
-#endif  // INCLUDE_CERTIFICATES_HPP_
+#endif  // INCLUDE_CERTIF_HPP_
