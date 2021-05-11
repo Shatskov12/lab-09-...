@@ -2,10 +2,12 @@
 
 #ifndef INCLUDE_PARSER_HPP_
 #define INCLUDE_PARSER_HPP_
-#include <iostream>
-#include <string>
+
 #include "Downloader.hpp"
 #include "Queue.hpp"
+#include <iostream>
+#include <string>
+
 
 struct URL {
   std::string url;

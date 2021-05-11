@@ -2,9 +2,9 @@
 
 #ifndef INCLUDE_DOWNLOADER_HPP_
 #define INCLUDE_DOWNLOADER_HPP_
-#include <iostream>
 #include "Downloader.hpp"
 #include "Queue.hpp"
+#include <iostream>
 #include <string>
 
 using std::string;
@@ -21,7 +21,7 @@ class Downloader {
  public:
   Downloader() = delete;
   static void DownloadPage();
-  static Queue<Page> queue_pages;
+  inline static Queue<Page> queue_pages;
 
  private:
   static void DownloadHttp(Page&& _page);
